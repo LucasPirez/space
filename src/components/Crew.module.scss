@@ -1,0 +1,192 @@
+.h2 {
+  font-weight: 400;
+  position: absolute;
+  color: #fff;
+  top: 150px;
+  left: 150px;
+}
+
+.imageBack {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: auto;
+}
+.radioButton {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  bottom: 7%;
+  left: 20%;
+  z-index: 3;
+
+  .buttonCrew {
+    margin: 0.6rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 70vh;
+  bottom: 30px;
+  position: absolute;
+}
+
+.img {
+  flex-shrink: 0;
+  max-height: 100%;
+}
+
+.imgCont {
+  max-width: 50%;
+  height: 100%;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  .span {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+  }
+  .p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1, 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .h2 {
+    top: 80px;
+    left: 60px;
+  }
+  .imageBack {
+    min-height: 100%;
+    width: auto;
+  }
+  .radioButton {
+    bottom: 50%;
+    left: 40%;
+    z-index: 3;
+
+    .buttonCrew {
+      margin: 0.6rem;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 90%;
+    height: 82vh;
+  }
+
+  .img {
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+
+  .imgCont {
+    max-width: 50%;
+    height: 50%;
+  }
+
+  .textCont {
+    width: 80%;
+    text-align: center;
+
+    .span {
+      font-weight: 200;
+
+      font-size: 2rem;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+
+    .h3 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+    .p {
+      font-size: 1.2rem;
+      font-weight: 200;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .h2 {
+    top: 50px;
+    left: 28%;
+    font-size: 1.3rem;
+  }
+  .imageBack {
+    min-height: 100%;
+    width: auto;
+  }
+  .radioButton {
+    bottom: 37%;
+    left: 30%;
+
+    .buttonCrew {
+      margin: 0.6rem;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 80vh;
+  }
+
+  .imgCont {
+    display: flex;
+    align-items: flex-end;
+    width: 350px;
+    height: 50%;
+    padding: 0 20% 0 20%;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+  }
+
+  .textCont {
+    width: 85%;
+
+    .span {
+      font-weight: 200;
+
+      font-size: 1.3rem;
+    }
+
+    .h3 {
+      font-size: 1.8rem;
+    }
+    .p {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  }
+}

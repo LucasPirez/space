@@ -1,0 +1,196 @@
+.imageBack {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.render {
+  display: flex;
+  width: 80%;
+  height: 55%;
+  position: absolute;
+
+  bottom: 12%;
+}
+
+.butCont {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 350px;
+
+  .button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+
+    &:focus {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+.conTec {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  flex-direction: row-reverse;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cont {
+  width: auto;
+  height: 100%;
+}
+
+.img {
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.conText {
+  width: 47%;
+  height: 100%;
+  margin-top: 10%;
+
+  .h3 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin: 0.8rem;
+    color: #fff;
+  }
+
+  .span {
+    color: #fff;
+  }
+
+  .p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    font-weight: 200;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1080px) {
+  .imageBack {
+    width: 100%;
+    height: 100%;
+  }
+
+  .render {
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    bottom: 0;
+  }
+
+  .butCont {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 30px;
+    position: absolute;
+    transform: translate(220px, 350px);
+  }
+
+  .conTec {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .cont {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .conText {
+    width: 67%;
+
+    margin-top: 150px;
+    text-align: center;
+
+    .span {
+      font-size: 1.3rem;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .render {
+    flex-direction: column;
+    width: 100%;
+
+    height: 85vh;
+    bottom: 0;
+  }
+
+  .butCont {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 30px;
+    position: absolute;
+    transform: translate(70px, 180px);
+
+    .button {
+      width: 50px;
+      height: 50px;
+      margin: 0.7rem;
+      font-size: 1rem;
+    }
+  }
+
+  .conTec {
+    width: 100%;
+    height: 90vh;
+    justify-content: space-between;
+  }
+
+  .cont {
+    width: 375px;
+    height: 30%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .conText {
+    width: 80%;
+    height: 50%;
+    margin-top: 0px;
+    text-align: center;
+
+    .h3 {
+      font-size: 1.5rem;
+    }
+
+    .p {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+
+    .span {
+      font-size: 1rem;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+}

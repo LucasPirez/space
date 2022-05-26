@@ -1,0 +1,270 @@
+.h2 {
+  position: absolute;
+  top: 140px;
+  left: 250px;
+  color: #fff;
+}
+
+.imageBack {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+.butConditional {
+  position: absolute;
+  transform: translate(80%, -400%);
+  z-index: 1;
+}
+
+.butConditional > button {
+  box-sizing: content-box;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  cursor: pointer;
+}
+
+.butConditional > button:hover {
+  border-bottom: 3px solid rgba(250, 250, 250, 0.5);
+}
+.butConditional > button:focus {
+  border-bottom: 3px solid #fff;
+}
+
+.conditionalCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1300px;
+  height: 70vh;
+  bottom: 0;
+
+  position: absolute;
+}
+
+.imagenPlanets {
+  width: 38%;
+
+  transform: translate(30%, 0);
+}
+
+.imgDestination {
+  flex-shrink: 0;
+  width: 80%;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.textDescrip > p {
+  width: 70%;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 6rem;
+  line-height: 1.9rem;
+}
+
+.titleH3 {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.span {
+  color: #fff;
+  color: rgba(250, 250, 250, 0.7);
+}
+
+.distDay {
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-column-gap: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 850px) {
+  .imageBack {
+    min-width: auto;
+    height: 100%;
+  }
+  .h2 {
+    left: 40px;
+    top: 90px;
+  }
+
+  .butConditional {
+    position: absolute;
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+
+  .conditionalCont {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+
+    height: 85vh;
+    bottom: 0;
+  }
+
+  .imagenPlanets {
+    width: 55%;
+    align-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .imgDestination {
+    flex-shrink: 0;
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .text {
+    justify-content: flex-start;
+    width: 95%;
+    height: 100%;
+  }
+
+  .textDescrip > .p {
+    width: auto;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    line-height: 1.9rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .distDay {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 4rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    margin: 3rem 0 6rem 7rem;
+  }
+
+  .p {
+    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+
+  .span {
+    color: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  .imageBack {
+    width: auto;
+    height: 130vh;
+  }
+  .h2 {
+    left: 30%;
+    top: 60px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .titleH3 {
+    font-size: 4.5rem;
+  }
+  .butConditional {
+    position: absolute;
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+
+  .conditionalCont {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+
+    height: 85vh;
+    bottom: 0;
+  }
+
+  .imagenPlanets {
+    width: 55%;
+    align-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .imgDestination {
+    flex-shrink: 0;
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .text {
+    justify-content: flex-start;
+    width: 95%;
+    height: 100%;
+  }
+
+  .textDescrip > .p {
+    width: 90%;
+    font-size: 0.8rem;
+    margin-left: 3rem;
+    line-height: 1.4rem;
+
+    margin: 3rem 0 0 1.6rem;
+  }
+
+  .distDay {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-rows: 40px 20px 40px 20px;
+    grid-template-columns: 100px;
+
+    margin-bottom: 0rem;
+    font-size: 1.4rem;
+    margin: 3rem 0 6rem 7rem;
+  }
+
+  .p {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 200;
+    grid-row-start: 0;
+  }
+  .distDay:nth-child(2) {
+    grid-row-start: 2;
+  }
+
+  .span {
+    color: #fff;
+    grid-row-start: 1;
+  }
+
+  .distDay:nth-child(2n -1) {
+    grid-row-start: 3;
+    background-color: red;
+  }
+}
