@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Routes, NavLink, Route } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Destination from "./components/Destination";
 import Crew from "./components/Crew";
@@ -25,7 +25,11 @@ function App() {
         </div>
         {width > 450 ? (
           <div className="App-header">
-            <NavLink to="/" className="nav" activeClassName="active">
+            <NavLink
+              to="/frontEndMentorChallenges"
+              className="nav"
+              activeClassName="active"
+            >
               HOME
             </NavLink>
             <NavLink to="destination" className="nav" activeClassName="active">
@@ -47,7 +51,7 @@ function App() {
             <button className="but-true" onClick={() => setHeader(false)}>
               <img src={hamburguer} alt="" />
             </button>
-            <NavLink to="/" className="nav nav-1">
+            <NavLink to="/frontEndMentorChallenges" className="nav nav-1">
               HOME
             </NavLink>
             <NavLink to="/destination" className="nav">
@@ -64,8 +68,11 @@ function App() {
       </header>
 
       <div className="principal">
-        <Routes basename={process.env.PUBLIC_URL}>
-          <Route path="/" element={<Home width={width} />} />
+        <Routes>
+          <Route
+            path="/frontEndMentorChallenges"
+            element={<Home width={width} />}
+          />
           <Route path="destination" element={<Destination width={width} />} />
           <Route path="/crew" element={<Crew width={width} />} />
           <Route path="/tecnology" element={<Technology width={width} />} />
@@ -74,5 +81,6 @@ function App() {
     </div>
   );
 }
+// basename={process.env.PUBLIC_URL}
 
 export default App;
