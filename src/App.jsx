@@ -50,7 +50,7 @@ function App() {
             <NavLink to="/" className="nav nav-1">
               HOME
             </NavLink>
-            <NavLink to="destination" className="nav">
+            <NavLink to="/destination" className="nav">
               DESTINATION
             </NavLink>
             <NavLink to="/crew" className="nav">
@@ -64,7 +64,7 @@ function App() {
       </header>
 
       <div className="principal">
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route path="/" element={<Home width={width} />} />
           <Route path="destination" element={<Destination width={width} />} />
           <Route path="/crew" element={<Crew width={width} />} />
