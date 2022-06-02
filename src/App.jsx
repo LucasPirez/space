@@ -68,7 +68,7 @@ function App() {
       </header>
 
       <div className="principal">
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route
             path="/frontEndMentorChallenges"
             element={<Home width={width} />}
