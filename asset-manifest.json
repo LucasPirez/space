@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.86777269.css",
-    "main.js": "/static/js/main.8b2b9eb8.js",
+    "main.js": "/static/js/main.efd7bd4d.js",
     "static/js/787.196204ef.chunk.js": "/static/js/787.196204ef.chunk.js",
     "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
@@ -32,11 +32,11 @@
     "static/media/icon-close.svg": "/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
     "main.86777269.css.map": "/static/css/main.86777269.css.map",
-    "main.8b2b9eb8.js.map": "/static/js/main.8b2b9eb8.js.map",
+    "main.efd7bd4d.js.map": "/static/js/main.efd7bd4d.js.map",
     "787.196204ef.chunk.js.map": "/static/js/787.196204ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86777269.css",
-    "static/js/main.8b2b9eb8.js"
+    "static/js/main.efd7bd4d.js"
   ]
 }
