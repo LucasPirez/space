@@ -51,7 +51,7 @@ function App() {
             <button className="but-true" onClick={() => setHeader(false)}>
               <img src={hamburguer} alt="" />
             </button>
-            <NavLink to="/frontEndMentorChallenges" className="nav nav-1">
+            <NavLink to="/" className="nav nav-1">
               HOME
             </NavLink>
             <NavLink to="/destination" className="nav">
